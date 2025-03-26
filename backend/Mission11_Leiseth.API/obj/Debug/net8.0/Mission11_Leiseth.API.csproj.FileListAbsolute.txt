@@ -74,3 +74,4 @@
 /Users/jleiseth/Desktop/Mission11_Leiseth/backend/Mission11_Leiseth.API/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/jleiseth/Desktop/Mission11_Leiseth/backend/Mission11_Leiseth.API/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/jleiseth/Desktop/Mission11_Leiseth/backend/Mission11_Leiseth.API/bin/Debug/net8.0/runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll
+/Users/jleiseth/Desktop/Mission11_Leiseth/backend/Mission11_Leiseth.API/obj/Debug/net8.0/Mission11_Leiseth.API.sourcelink.json

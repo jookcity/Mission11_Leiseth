@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "m8q6Pnp3Tu0=",
+  "dgSpecHash": "rKZy7UTEzjI=",
   "success": true,
   "projectFilePath": "/Users/jleiseth/Desktop/Mission11_Leiseth/backend/Mission11_Leiseth.API/Mission11_Leiseth.API.csproj",
   "expectedPackageFiles": [
@@ -35,7 +35,10 @@
     "/Users/jleiseth/.nuget/packages/system.io.pipelines/9.0.3/system.io.pipelines.9.0.3.nupkg.sha512",
     "/Users/jleiseth/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/jleiseth/.nuget/packages/system.text.encodings.web/9.0.3/system.text.encodings.web.9.0.3.nupkg.sha512",
-    "/Users/jleiseth/.nuget/packages/system.text.json/9.0.3/system.text.json.9.0.3.nupkg.sha512"
+    "/Users/jleiseth/.nuget/packages/system.text.json/9.0.3/system.text.json.9.0.3.nupkg.sha512",
+    "/Users/jleiseth/.nuget/packages/microsoft.netcore.app.ref/8.0.13/microsoft.netcore.app.ref.8.0.13.nupkg.sha512",
+    "/Users/jleiseth/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.13/microsoft.aspnetcore.app.ref.8.0.13.nupkg.sha512",
+    "/Users/jleiseth/.nuget/packages/microsoft.netcore.app.host.osx-x64/8.0.13/microsoft.netcore.app.host.osx-x64.8.0.13.nupkg.sha512"
   ],
   "logs": []
 }
