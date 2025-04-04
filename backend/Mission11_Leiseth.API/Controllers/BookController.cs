@@ -13,23 +13,28 @@ namespace Mission11_Leiseth.API.Controllers
         public BookController(BookDbContext temp) => _bookContext = temp;
 
         [HttpGet("AllBooks")]
-        public IActionResult GetBooks(int pageSize = 5, int pageNum = 1, string sortBy = "title", string sortOrder = "asc")
+        public IActionResult GetBooks(int pageSize = 5, int pageNum = 1, string sortBy = "title", string sortOrder = "asc", [FromQuery] List<string>? bookCategories = null)
         {
-            var booksQuery = _bookContext.Books.AsQueryable();
-            
+            var query = _bookContext.Books.AsQueryable();
+
             if (sortBy.ToLower() == "title")
             {
-                booksQuery = sortOrder.ToLower() == "desc"
-                    ? booksQuery.OrderByDescending(b => b.Title)
-                    : booksQuery.OrderBy(b => b.Title);
+                query = sortOrder.ToLower() == "desc"
+                ? query.OrderByDescending(b => b.Title)
+                    : query.OrderBy(b => b.Title);
             }
             
-            var books = booksQuery
+            if (bookCategories != null && bookCategories.Any())
+            {
+                query = query.Where(b => bookCategories.Contains(b.Category));
+            }
+            
+            var totalNumBooks = query.Count();
+            
+            var books = query
                 .Skip((pageNum - 1) * pageSize)
                 .Take(pageSize)
                 .ToList();
-
-            var totalNumBooks = _bookContext.Books.Count();
 
             var responseObject = new
             {
@@ -40,5 +45,15 @@ namespace Mission11_Leiseth.API.Controllers
             return Ok(responseObject);
         }
 
+        [HttpGet("GetBookCategories")]
+        public IActionResult GetBookCategories()
+        {
+            var bookCategories = _bookContext.Books
+                .Select(b => b.Category)
+                .Distinct()
+                .ToList();
+
+            return Ok(bookCategories);
+        }
     }
 }
