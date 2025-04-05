@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission11_Leiseth.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+809846860d7f12ec59f8a4c7f961f1972acdb56e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95a5d0589d26077bfc747838e7e713f014600d62")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission11_Leiseth.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission11_Leiseth.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
