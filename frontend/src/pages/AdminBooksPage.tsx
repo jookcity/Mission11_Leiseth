@@ -147,7 +147,3 @@ const AdminBooksPage = () => {
 };
 
 export default AdminBooksPage;
-
-function setTotalPages(arg0: number) {
-    throw new Error('Function not implemented.');
-}
